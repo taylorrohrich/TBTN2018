@@ -1,28 +1,278 @@
-.App {
+/*
+Default
+*/
+
+body {
+  background-color: #f2f3f5;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.row {
+  margin: 0;
+}
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
+}
+
+/*
+Navigation
+*/
+
+.navBar {
+  padding-top: 2em;
+  position: relative;
+  font-size: 1.5em;
+  letter-spacing: 0.2em;
+}
+.navBarItem {
+  padding: 1em;
   text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
   color: white;
 }
 
-.App-title {
+.navBarItem:hover {
+  background-color: rgba(232, 234, 237, 0.5);
+}
+
+/*
+Landing Portion
+*/
+
+.headerImage {
+  background-image: url("https://news.virginia.edu/sites/default/files/styles/uva_basic_article/public/article_image/bicentennial_security_rotunda_dusk_ss_header_3-2.jpg?itok=doo6GX08");
+  width: auto;
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 0;
+}
+
+.title {
+  margin-top: 3em;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 4em;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+
+/*
+About
+*/
+
+.about {
+  padding: 5em;
+}
+.aboutHeader {
+  display: block;
+  text-align: center;
+  padding-bottom: 1em;
+  letter-spacing: 0.2em;
+  font-size: 3em;
+}
+
+.aboutImage {
+  height: 35vh;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+}
+.aboutDescription {
+  padding-top: 3em;
+  padding-left: 28%;
+  padding-right: 28%;
+  line-height: 2.5em;
+  color: grey;
+  font-size: 1.5em;
+}
+.aboutDescription b {
+  color: black;
+}
+
+/*
+Break Image
+*/
+
+.breakImage {
+  background-image: url("http://moziru.com/images/drawn-star-the-sky-drawing-1.png");
+  height: 90vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*
+Merchandise
+*/
+
+.merchandise {
+  padding: 5em;
+}
+
+.merchandiseHeader {
+  display: block;
+  text-align: center;
+  padding-bottom: 1em;
+  letter-spacing: 0.2em;
+  font-size: 3em;
+}
+
+.merchandiseDescription {
+  line-height: 2.5em;
+  color: grey;
   font-size: 1.5em;
 }
 
-.App-intro {
-  font-size: large;
+.merchandiseImg1 {
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.merchandiseImg2 {
+  border-radius: 50%;
+  padding-bottom: 2em;
+  display: block;
+  margin: auto;
+}
+
+/*
+Event
+*/
+
+.event {
+  padding: 3em;
+}
+.eventImage {
+  background-image: url("http://moziru.com/images/drawn-star-the-sky-drawing-1.png");
+  width: auto;
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 0;
+}
+
+.eventHeader {
+  color: white;
+  display: block;
+  text-align: center;
+  padding: 1.5em;
+  letter-spacing: 0.2em;
+  font-size: 5em;
+}
+.eventVigilImage {
+  background-image: url("./images/eventStars/vigilBefore.png");
+  background-size: 256px, 256px;
+  height: 256px;
+  width: 256px;
+}
+.eventVigilImage:hover {
+  background-image: url("./images/eventStars/vigilAfter.png");
+  background-size: 256px, 256px;
+  height: 256px;
+  width: 256px;
+}
+
+.eventHackImage {
+  background-image: url("./images/eventStars/hackBefore.png");
+  background-size: 256px, 256px;
+  height: 256px;
+  width: 256px;
+}
+.eventHackImage:hover {
+  background-image: url("./images/eventStars/hackAfter.png");
+  background-size: 256px, 256px;
+  height: 256px;
+  width: 256px;
+}
+
+.eventHealImage {
+  background-image: url("./images/eventStars/healingBefore.png");
+  background-size: 256px, 256px;
+  height: 256px;
+  width: 256px;
+}
+.eventHealImage:hover {
+  background-image: url("./images/eventStars/healingAfter.png");
+  background-size: 256px, 256px;
+  height: 256px;
+  width: 256px;
+}
+
+.eventLegacyImage {
+  background-image: url("./images/eventStars/legacyBefore.png");
+  background-size: 256px, 256px;
+  height: 256px;
+  width: 256px;
+}
+.eventLegacyImage:hover {
+  background-image: url("./images/eventStars/legacyAfter.png");
+  background-size: 256px, 256px;
+  height: 256px;
+  width: 256px;
+}
+
+.eventLoveImage {
+  background-image: url("./images/eventStars/loveBefore.png");
+  background-size: 256px, 256px;
+  height: 256px;
+  width: 256px;
+}
+.eventLoveImage:hover {
+  background-image: url("./images/eventStars/loveAfter.png");
+  background-size: 256px, 256px;
+  height: 256px;
+  width: 256px;
+}
+
+.eventPolicyImage {
+  background-image: url("./images/eventStars/policyBefore.png");
+  background-size: 256px, 256px;
+  height: 256px;
+  width: 256px;
+}
+.eventPolicyImage:hover {
+  background-image: url("./images/eventStars/policyAfter.png");
+  background-size: 256px, 256px;
+  height: 256px;
+  width: 256px;
+}
+
+.eventShadesImage {
+  background-image: url("./images/eventStars/shadesBefore.png");
+  background-size: 256px, 256px;
+  height: 256px;
+  width: 256px;
+}
+.eventShadesImage:hover {
+  background-image: url("./images/eventStars/shadesAfter.png");
+  background-size: 256px, 256px;
+  height: 256px;
+  width: 256px;
+}
+
+.eventSilencedImage {
+  background-image: url("./images/eventStars/silencedBefore.png");
+  background-size: 256px, 256px;
+  height: 256px;
+  width: 256px;
+}
+.eventSilencedImage:hover {
+  background-image: url("./images/eventStars/silencedAfter.png");
+  background-size: 256px, 256px;
+  height: 256px;
+  width: 256px;
 }

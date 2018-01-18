@@ -5,6 +5,8 @@ import ScrollAnimation from "react-animate-on-scroll";
 import Event from "./Event.js";
 import Merchandise from "./Merchandise.js";
 import About from "./About.js";
+import EventPage from "./EventPage.js";
+import Facebook from "../images/Social-Media-Icons/facebook.png";
 
 import "../../node_modules/animate.css/animate.min.css";
 import "../App.css";
@@ -78,6 +80,12 @@ class Home extends Component {
         <Element name="Event">
           <Event />
         </Element>
+        <div className="footer">
+          <div className="footerInfo">Contact Us</div>
+          <a href="https://www.facebook.com/uvatbtn/">
+            <img className="footerFacebook" src={Facebook} />
+          </a>
+        </div>
       </div>
     );
   }

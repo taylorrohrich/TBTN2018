@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "animate.css": "^3.5.2",
+    "firebase": "^4.8.0",
+    "firebase-tools": "^3.16.0",
     "react": "^16.1.1",
     "react-animate-on-scroll": "^1.5.1",
     "react-bootstrap": "^0.31.5",

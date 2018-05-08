@@ -1,2 +1,3 @@
 # TBTN2018
-Take Back the Night website\n Hosted at https://takebackthenightuva.com/
+Take Back the Night website. 
+Hosted at https://takebackthenightuva.com/

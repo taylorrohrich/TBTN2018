@@ -5,6 +5,8 @@ import ScrollAnimation from "react-animate-on-scroll";
 import Event from "./Event.js";
 import Merchandise from "./Merchandise.js";
 import About from "./About.js";
+import Contact from "./Contact.js";
+import Sponsors from "./Sponsors.js";
 import EventPage from "./EventPage.js";
 import Facebook from "../images/Social-Media-Icons/facebook.png";
 
@@ -26,6 +28,7 @@ class Home extends Component {
           <div className="headerImage">
             <div className="navBar">
               <Row>
+                <Col md={1} />
                 <Col md={2}>
                   <Link
                     activeClass="active"
@@ -59,6 +62,29 @@ class Home extends Component {
                     <div className="navBarItem">EVENTS</div>
                   </Link>
                 </Col>
+                <Col md={2}>
+                  <Link
+                    activeClass="active"
+                    to="Sponsors"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                  >
+                    <div className="navBarItem">SPONSORS</div>
+                  </Link>
+                </Col>
+                <Col md={2}>
+                  <Link
+                    activeClass="active"
+                    to="Contact"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                  >
+                    <div className="navBarItem">CONTACT US</div>
+                  </Link>
+                </Col>
+                <Col md={1} />
               </Row>
             </div>
             <ScrollAnimation animateIn="fadeIn" delay={1000}>
@@ -80,8 +106,15 @@ class Home extends Component {
         <Element name="Event">
           <Event />
         </Element>
+        <Element name="Sponsors">
+          <Sponsors />
+        </Element>
+        <div className="breakImage" />
+        <Element name="Contact">
+          <Contact />
+        </Element>
         <div className="footer">
-          <div className="footerInfo">Contact Us</div>
+          <div className="footerInfo">Follow Us on Facebook!</div>
           <a href="https://www.facebook.com/uvatbtn/">
             <img className="footerFacebook" src={Facebook} />
           </a>
